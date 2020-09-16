@@ -19,9 +19,12 @@ namespace UsingMyPublicNuget
 
     private void button1_Click(object sender, EventArgs e)
     {
-      IndSoftTestNuget01.NugetMain resp = new IndSoftTestNuget01.NugetMain();
+      //IndSoftTestNuget01.NugetMain resp = new IndSoftTestNuget01.NugetMain();
 
-      System.Windows.Forms.MessageBox.Show("AuthorizationStatus: " + resp.GetResponse().AuthorizationStatus);
+      // System.Windows.Forms.MessageBox.Show("MyNugetVersion: " + IndSoftTestNuget01.NugetMain.GetMyVersion() + Environment.NewLine + 
+      //                                      "ThirdPartyNugetVersion: " + IndSoftTestNuget03ThirdParty.ThirdPartyMain.GetMyVersion());
+      
+      System.Windows.Forms.MessageBox.Show(IndSoftTestNuget01.NugetMain.GetMyVersion() + Environment.NewLine +  IndSoftTestNuget03ThirdParty.ThirdPartyMain.GetMyVersion());
     }
   }
 }
