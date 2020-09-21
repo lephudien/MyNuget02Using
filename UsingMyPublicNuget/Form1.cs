@@ -24,7 +24,11 @@ namespace UsingMyPublicNuget
       // System.Windows.Forms.MessageBox.Show("MyNugetVersion: " + IndSoftTestNuget01.NugetMain.GetMyVersion() + Environment.NewLine + 
       //                                      "ThirdPartyNugetVersion: " + IndSoftTestNuget03ThirdParty.ThirdPartyMain.GetMyVersion());
       
-      System.Windows.Forms.MessageBox.Show(IndSoftTestNuget01.NugetMain.GetMyVersion() + Environment.NewLine +  IndSoftTestNuget03ThirdParty.ThirdPartyMain.GetMyVersion());
+      System.Windows.Forms.MessageBox.Show(IndSoftTestNuget01.NugetMain.GetMyVersion() 
+                                            + Environment.NewLine
+                                            //+ IndSoftTestNuget01
+                                            //+ Environment.NewLine
+                                            +  IndSoftTestNuget03ThirdParty.ThirdPartyMain.GetMyVersion());
     }
   }
 }
